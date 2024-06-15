@@ -8,11 +8,12 @@ long multiply(long a, long b);
 long double divide(long a, long b);
 long mod(long a, long b);
 bool inputValidator(string a, string b);
+void print(long a, long b);
 
 int main(void)
 {
     string fristNumber, secondNumber;
-    long int numOne, numTwo;
+    long numOne, numTwo;
 
     cin >> fristNumber;
     cin >> secondNumber;
@@ -32,11 +33,7 @@ int main(void)
     ssTwo << secondNumber;
     ssTwo >> numTwo;
 
-    cout << "SUM: " << add(numOne, numTwo) << endl;
-    cout << "SUB: " << subtract(numOne, numTwo) << endl;
-    cout << "MUL: " << multiply(numOne, numTwo) << endl;
-    cout << "DIV: " << divide(numOne, numTwo) << endl;
-    cout << "MOD: " << mod(numOne, numTwo) << endl;
+    print(numOne, numTwo);
 
     return 0;
 }
@@ -96,4 +93,13 @@ bool inputValidator(string fristNumber, string secondNumber)
     }
 
     return true;
+}
+
+void print(long numOne, long numTwo)
+{
+    cout << "SUM: " << add(numOne, numTwo) << endl;
+    cout << "SUB: " << subtract(numOne, numTwo) << endl;
+    cout << "MUL: " << multiply(numOne, numTwo) << endl;
+    cout << "DIV: " << divide(numOne, numTwo) << endl;
+    cout << "MOD: " << mod(numOne, numTwo) << endl;
 }
