@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int calculateOddNumbersSummation(int arr[], int n)
+int calculateEvenNumbersSummation(int arr[], int n)
 {
-    int oddSum = 0;
+    int evenSum = 0;
 
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] % 2 != 0)
+        if (arr[i] % 2 == 0)
         {
-            oddSum += arr[i];
+            evenSum += arr[i];
         }
     }
 
-    return oddSum;
+    return evenSum;
 }
 
 int main()
@@ -29,8 +29,8 @@ int main()
         cin >> arr[i];
     }
 
-    int sumOfOddNumbers = calculateOddNumbersSummation(arr, n);
-    cout << "Odd Number's Summation: " << sumOfOddNumbers;
+    int sumOfEvenNumbers = calculateEvenNumbersSummation(arr, n);
+    cout << "Even Number's Summation: " << sumOfEvenNumbers;
 
     return 0;
 }
