@@ -71,7 +71,9 @@ bool inputValidator(string fristNumber, string secondNumber)
 
     for (int i = 0; i < fristNumber.length(); i++)
     {
-        if ((fristNumber.length() > 12) || (fristNumber[i] >= 0 && fristNumber[i] <= 47) || (fristNumber[i] >= 58 && fristNumber[i] <= 127))
+        if ((fristNumber.length() > 12) ||
+            (fristNumber[i] >= 0 && fristNumber[i] <= 47) ||
+            (fristNumber[i] >= 58 && fristNumber[i] <= 127))
         {
             firstFlag = false;
             break;
@@ -80,7 +82,9 @@ bool inputValidator(string fristNumber, string secondNumber)
 
     for (int i = 0; i < secondNumber.length(); i++)
     {
-        if ((secondNumber.length() > 12) || (secondNumber[i] >= 0 && secondNumber[i] <= 47) || (secondNumber[i] >= 58 && secondNumber[i] <= 127))
+        if ((secondNumber.length() > 12) ||
+            (secondNumber[i] >= 0 && secondNumber[i] <= 47) ||
+            (secondNumber[i] >= 58 && secondNumber[i] <= 127))
         {
             secondFlag = false;
             break;

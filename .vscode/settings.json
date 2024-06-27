@@ -46,6 +46,8 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "typeinfo": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "valarray": "cpp",
+    "bitset": "cpp"
   }
 }
