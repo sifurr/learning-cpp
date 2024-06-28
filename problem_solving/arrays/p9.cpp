@@ -3,16 +3,16 @@ using namespace std;
 
 int findMinNumberInAnArray(int array[], int arraySize)
 {
-    int maxNumber = INT_MIN;
+    int minNumber = INT_MAX;
     for (int i = 0; i < arraySize; i++)
     {
-        if (array[i] > maxNumber)
+        if (array[i] < minNumber)
         {
-            maxNumber = array[i];
+            minNumber = array[i];
         }
     }
 
-    return maxNumber;
+    return minNumber;
 }
 
 int main()
@@ -28,8 +28,8 @@ int main()
         cin >> array[i];
     }
 
-    int maxNumber = findMinNumberInAnArray(array, arraySize);
-    cout << "Maximum number: " << maxNumber << endl;
+    int minNumber = findMinNumberInAnArray(array, arraySize);
+    cout << "Minimum number: " << minNumber << endl;
 
     return 0;
 }
