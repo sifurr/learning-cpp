@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int calculateSumOfArray(int array[], int size)
+int calculateSum(int array[], int size)
 {
     int sum = 0;
     for (int i = 0; i < size; i++)
@@ -33,8 +33,9 @@ int main()
         cin >> array[i];
     }
 
-    summation = calculateSumOfArray(array, arraySize);
-    cout << "Sum of all elements: " << summation << endl << endl;
+    summation = calculateSum(array, arraySize);
+    cout << "Sum of all elements: " << summation << endl
+         << endl;
 
     cout << "Enter the last number of Arithmetic series: " << endl;
     cin >> n;
